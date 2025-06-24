@@ -25,3 +25,8 @@ cb arrow keys => switch to other panes
 cb + arrow keys => change panes size
 cb z => change zoom
 cb x => close current pane
+
+# apt proxy
+sudo vim /etc/apt/apt.conf.d/99proxy
+Acquire::http::Proxy "http://127.0.0.1:8080/";
+Acquire::https::Proxy "http://127.0.0.1:8080/";
